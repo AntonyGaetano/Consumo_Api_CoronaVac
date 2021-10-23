@@ -1,5 +1,5 @@
 
-	fetch('https://coronavirus-tracker-api.herokuapp.com/v2/locations/')
+	fetch('https://coronavirus-tracker-api.herokuapp.com/v2/locations/30')
 	.then(function(resp) { return resp.json() })
 	.then(function(data) {
 		/*let population = data.location.country_population;
@@ -14,9 +14,9 @@
 		document.getElementById('percent').innerHTML = ((Number(deaths)/Number(confirmedCases))*100).toLocaleString("en", {minimumFractionDigits: 2, maximumFractionDigits: 2}) + "%"; */
      
         console.log(data)
-        console.log(data.locations[30].country)
-		console.log(data.locations[48].province)
-		console.log(data.locations[30].id)
+        console.log(data.location.country)
+		//console.log(data.locations[48].province)
+		//console.log(data.locations[30].id)
 		printDados(data)
 		Tabela(data)
 
@@ -25,8 +25,25 @@
 		console.log("error");
 	})
 
-function printDados(){
-	
+function printDados(dados){
+
+	var population = document.getElementById("population")
+    var deaths = document.getElementById("deaths")
+	var country = document.getElementById("country")
+	var confirmed = document.getElementById("confirmed")
+	var updated = document.getElementById("updated")
+
+	country.innerHTML = dados.location.country;
+	confirmed.innerHTML = dados.location.latest.confirmed
+	deaths.innerHTML = dados.location.latest.deaths
+	updated.innerHTML = (dados.location.last_updated).substr(0, 10)
+	population.innerHTML = dados.location.country_population
+
+
+	setconfirmed(result.location.latest.confirmed)
+	setdeaths(result.location.latest.deaths)
+	setpopulation(result.location.country_population)
+	setupadated(result.location.last_updated)
 }
 	
 
@@ -51,4 +68,4 @@ function Tabela(dados){
   tabela.appendChild(tr)
   }
 
-}
+} 
