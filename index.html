@@ -8,9 +8,46 @@
     <title>Document</title>
 </head>
 <body>
+
+
+    <section>
+        <head></head>
+        <main>
+            <div>
+              <label for="">Digite o id do pais</label> <br>
+              <input type="text">
+            </div>
+
+            <div>
+                <h3>País</h3>  
+                <span id="country"></span>
+             </div>
+
+            <div>
+                <h3>Casos Confirmados</h3>  
+                <span id="confirmed"></span>
+             </div>
+
+            <div>
+               <h3>Casos De Mortes</h3>  
+               <span id="deaths"></span>
+            </div>
+
+            <div>
+                <h3>Populçao Total</h3>  
+                <span id="population"></span>
+             </div>
+
+             <div>
+                <h3>Atualização</h3>  
+                <span id="updated"></span>
+             </div>
+        </main>
+    </section>
+
     <details>
         <summary>Veja os pais e seus ids</summary>
-    <table border="1" style={borderCollapse:"collapse"}>
+    <table border="1" style="border-collapse:'collapse'">
         <thead>
           <tr>
              <th>ID</th>
@@ -19,8 +56,6 @@
           </tr>
         </thead>
         <tbody id="tbody">
-     
-   
         </tbody>
        </table>
     </details>

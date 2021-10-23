@@ -1,8 +1,4 @@
-//window.onload = function() {
-	//getCovidStats();
-//}
 
-//function getCovidStats() {
 	fetch('https://coronavirus-tracker-api.herokuapp.com/v2/locations/')
 	.then(function(resp) { return resp.json() })
 	.then(function(data) {
@@ -21,14 +17,18 @@
         console.log(data.locations[30].country)
 		console.log(data.locations[48].province)
 		console.log(data.locations[30].id)
+		printDados(data)
 		Tabela(data)
 
 	})
 	.catch(function() {
 		console.log("error");
 	})
-	//setTimeout(getCovidStats, 43200000) // update every 12 hours
-//}
+
+function printDados(){
+	
+}
+	
 
 function Tabela(dados){
   var tabela = document.getElementById("tbody");
