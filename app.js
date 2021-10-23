@@ -47,25 +47,34 @@ function printDados(dados){
 }
 	
 
-function Tabela(dados){
-  var tabela = document.getElementById("tbody");
-  
+function Tabela(){
 
-  for(let i = 0; i < 279; i++){
-  var tr = document.createElement("tr");
-  var td1 = document.createElement("td");
-  var td2 = document.createElement("td");
-  var td3 = document.createElement("td");
+	var tabela = document.getElementById("tbody");
 
+	fetch('https://coronavirus-tracker-api.herokuapp.com/v2/locations/')
+	.then(function(resp) { return resp.json() })
+	.then(function(dados) {
+	
+		 
 
-  td1.innerHTML = dados.locations[i].id;
-  td2.innerHTML = dados.locations[i].country;
-  td3.innerHTML = dados.locations[i].province;
+		for(let i = 0; i < 279; i++){
+			var tr = document.createElement("tr");
+			var td1 = document.createElement("td");
+			var td2 = document.createElement("td");
+			var td3 = document.createElement("td");
+		  
+		  
+			td1.innerHTML = dados.locations[i].id;
+			td2.innerHTML = dados.locations[i].country;
+			td3.innerHTML = dados.locations[i].province;
+		  
+			tr.appendChild(td1)
+			tr.appendChild(td2)
+			tr.appendChild(td3)
+			tabela.appendChild(tr)
+			}
+	})
 
-  tr.appendChild(td1)
-  tr.appendChild(td2)
-  tr.appendChild(td3)
-  tabela.appendChild(tr)
-  }
+ 
 
 } 
