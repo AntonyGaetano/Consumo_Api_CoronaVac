@@ -69,9 +69,11 @@ function Tabela(){
 } 
 
 
+
 // Local para chamar as funções pelo o click
 
 document.querySelector("button").addEventListener("click", function(){
 	var inputV = document.querySelector("input").value
 	PegaId(inputV)
 })
+
