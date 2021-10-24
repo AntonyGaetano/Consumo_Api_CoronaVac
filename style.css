@@ -78,3 +78,8 @@ main > div{
     text-align: center;
 }
 
+summary{
+    color:yellow;
+    cursor: pointer;
+}
+
