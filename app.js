@@ -1,8 +1,14 @@
  // <==== Evento Onload para inicar as principais funções que é o printDados e a Tabela onde fica os ids dos pais!  ====>
   window.addEventListener("load", function(){
     Tabela()
+    PegaId(30) // Iniciando com o país Brazil
+  })
 
-	fetch('https://coronavirus-tracker-api.herokuapp.com/v2/locations/30')
+
+// <== Essa função foi criada para receber o id do input e jogar para o printDados ==>
+const PegaId = (id) =>{
+	
+	fetch(`https://coronavirus-tracker-api.herokuapp.com/v2/locations/${id}`)
 	.then(function(resp) { return resp.json() })
 	.then(function(data) {
 	
@@ -11,8 +17,8 @@
 	.catch(function() {
 		console.log("error");
 	})
-	  
-  })
+	
+}
 
 
 
