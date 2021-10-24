@@ -95,6 +95,10 @@ summary{
     margin: 0.6rem 0;
 }
 
+summary:hover{
+    color:dodgerblue;
+}
+
 table{
     background-color: white;
     color:black;

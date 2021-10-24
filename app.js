@@ -77,3 +77,10 @@ document.querySelector("button").addEventListener("click", function(){
 	PegaId(inputV)
 })
 
+document.querySelector("input").addEventListener('keypress',function (event){
+    key = event.keyCode
+    if (key === 13) {
+        PegaId(document.querySelector("input").value)
+    }
+})
+
