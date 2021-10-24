@@ -5,60 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
 
+     <section class="container">
+       <section>
+           <head></head>
+           <main>
+              <div>
+                <label for="">Digite o id do pais</label> <br>
+                <input type="number">
+                <button>Buscar</button>
+              </div>
 
-    <section>
-        <head></head>
-        <main>
-            <div>
-              <label for="">Digite o id do pais</label> <br>
-              <input type="number">
-              <button>Buscar</button>
-            </div>
+              <div>
+                  <h3>País</h3>  
+                  <span id="country"></span>
+              </div>
 
-            <div>
-                <h3>País</h3>  
-                <span id="country"></span>
-             </div>
+              <div>
+                  <h3>Casos Confirmados</h3>  
+                  <span id="confirmed"></span>
+              </div>
 
-            <div>
-                <h3>Casos Confirmados</h3>  
-                <span id="confirmed"></span>
-             </div>
+              <div>
+                 <h3>Casos De Mortes</h3>  
+                 <span id="deaths"></span>
+              </div>
 
-            <div>
-               <h3>Casos De Mortes</h3>  
-               <span id="deaths"></span>
-            </div>
+              <div>
+                 <h3>Populçao Total</h3>  
+                 <span id="population"></span>
+              </div>
 
-            <div>
-                <h3>Populçao Total</h3>  
-                <span id="population"></span>
-             </div>
+              <div>
+                 <h3>Atualização</h3>  
+                 <span id="updated"></span>
+              </div>
+           </main>
+       </section>
 
-             <div>
-                <h3>Atualização</h3>  
-                <span id="updated"></span>
-             </div>
-        </main>
+       <details>
+         <summary>Veja os pais e seus ids</summary>
+         <table border="1">
+           <thead>
+              <tr>
+                 <th>ID</th>
+                 <th>Pais</th>
+                 <th>Provincia</th>
+              </tr>
+           </thead>
+           <tbody id="tbody">
+           </tbody>
+         </table>
+       </details>
     </section>
-
-    <details>
-        <summary>Veja os pais e seus ids</summary>
-    <table border="1">
-        <thead>
-          <tr>
-             <th>ID</th>
-             <th>Pais</th>
-             <th>Provincia</th>
-          </tr>
-        </thead>
-        <tbody id="tbody">
-        </tbody>
-       </table>
-    </details>
 </body>
 </html>
