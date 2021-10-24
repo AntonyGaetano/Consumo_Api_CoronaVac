@@ -20,8 +20,6 @@ const PegaId = (id) =>{
 	
 }
 
-
-
 // <=== Essa função é para printar os dados na tela ===>
 function printDados(dados){
 
@@ -69,3 +67,11 @@ function Tabela(){
 	})
       
 } 
+
+
+// Local para chamar as funções pelo o click
+
+document.querySelector("button").addEventListener("click", function(){
+	var inputV = document.querySelector("input").value
+	PegaId(inputV)
+})
