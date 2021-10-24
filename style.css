@@ -25,19 +25,31 @@ header{
     display: flex;
 }
 
+
+
 img{
     width: 40px;
 }
 
 input{
-  padding: 0.5rem;
+  padding: 0.7rem;
   border: none;
   width: 220px;
+  border-bottom-left-radius:5px;
+  border-top-left-radius:5px;
 }
 
 button{
-  padding: 0.5rem;
+  padding: 0.7rem;
   border: none;
+  border-bottom-right-radius:5px;
+  border-top-right-radius:5px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(185, 184, 184);
+    color:white;
 }
 
 main{
@@ -62,5 +74,7 @@ main > div{
     justify-content: center;
     align-items: center;
     margin-top: 0.4rem;
+    padding: 0 0.3rem;
+    text-align: center;
 }
 
