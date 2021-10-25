@@ -42,7 +42,7 @@ input{
 }
 
 button{
-  padding: 0.7rem;
+  padding: 0.7rem 1.2rem;
   border: none;
   border-bottom-right-radius:5px;
   border-top-right-radius:5px;
@@ -90,14 +90,12 @@ main > div:hover{
 }
 
 summary{
-    color:white;
+    color:rgb(249, 253, 0);
     cursor: pointer;
     margin: 0.6rem 0;
 }
 
-summary:hover{
-    color:dodgerblue;
-}
+
 
 table{
     background-color: white;
