@@ -106,14 +106,16 @@ main > div:nth-child(5){
     color:#ff0844;
 }
 
-/*
+
 main > div:hover{
-    background-color: dodgerblue;
+    background-color: currentColor;
     cursor: pointer;
     transform: scale(1.1);
     box-shadow: 0px 0px 6px gray;
-    color:white;
-}  */
+    font-size: 24px;
+    padding-bottom: 4.7rem;
+    overflow: hidden;
+}  
 
 summary{
     color:white;
