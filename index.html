@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>API Covid-19</title>
 </head>
-<body>
+<body class=".body">
 
      <section class="container">
        <section>
@@ -24,27 +24,27 @@
               </div>
            </header>
            <main>
-              <div>
+              <div class="pais">
                   <h3>País</h4>  
                   <span id="country"></span>
               </div>
 
-              <div>
+              <div class="populacao">
                <h3>População Total</h4>  
                <span id="population"></span>
              </div>
 
-             <div>
+             <div class="atualizado">
                <h3>Atualizado</h4>  
                <span id="updated"></span>
              </div>
 
-              <div>
+              <div class="confirmados">
                   <h3>Casos Confirmados</h4>  
                   <span id="confirmed"></span>
               </div>
 
-              <div>
+              <div class="fatais">
                  <h3>Casos De Morte</h3>  
                  <span id="deaths"></span>
               </div>
@@ -53,7 +53,7 @@
            </main>
        </section>
 
-       <details>
+       <details class="detalhes">
          <summary>Veja o id dos paises</summary>
          <table border="1">
            <thead>
@@ -69,6 +69,11 @@
        </details>
     </section>
 
+
+       <!--===== GSAP =====-->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+       <!--===== ICONES =====-->
     <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
 </body>
 </html>

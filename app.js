@@ -84,3 +84,20 @@ document.querySelector("input").addEventListener('keypress',function (event){
     }
 })
 
+
+
+/*===== GSAP ANIMATION =====*/
+// input e imagem
+
+gsap.from('.body', {opacity: 0, duration: 0.3, delay:1, y: 10})
+gsap.from('.box-img-covid', {opacity: 0, duration: 1, delay:1.4, y: 10})
+gsap.from('.input-button', {opacity: 0, duration: 1, delay: 1.7, y: 30, stagger: 0.2,})
+
+// HOME
+gsap.from('.pais', {opacity: 0, duration: 0.7, delay:1.7, y: 30})
+gsap.from('.populacao', {opacity: 0, duration: 0.7, delay:1.6, y: 30})
+gsap.from('.atualizado', {opacity: 0, duration: 0.7, delay:1.5, y: 30})
+gsap.from('.confirmados', {opacity: 0, duration: 0.7, delay:1.4, y: 30})
+gsap.from('.fatais', {opacity: 0, duration: 0.7, delay:1.3, y: 30})
+gsap.from('.detalhes', {opacity: 0, duration: 0.7, delay:1.2, y: 30})
+
