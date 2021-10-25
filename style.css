@@ -123,12 +123,15 @@ summary{
     margin: 0.6rem 0;
 }
 
-
-
 table{
     background-color: white;
     color:black;
     text-align: center;
+}
+
+tr:hover{
+    background-color: gray;
+    color:white;
 }
 
 span{
