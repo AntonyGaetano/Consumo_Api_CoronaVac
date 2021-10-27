@@ -7,12 +7,12 @@
 - Pode-se ver os casos confirmados!
 - Os casos que levaram a morte e muito mais!
 
-### Loyout para notebook e desktop
+### Layout para notebook e desktop
 
 <img src="gif/api_covid_telanot.gif">
 
 
-### Loyout para celulares e tablets
+### Layout para celulares e tablets
 <img src="gif//api_covid_telacll.gif">
 
 🚀Tecnologias usadas:
